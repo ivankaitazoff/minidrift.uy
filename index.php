@@ -19,13 +19,20 @@ $endPlayer2Time = $t + 2 * 60 * 1000;
 $endPlayer3Time = $t + 3 * 60 * 1000;
 $endPlayer4Time = $t + 4 * 60 * 1000;
 ?>
+<script>
+var countDownDateP1 = <?php echo $endPlayer1Time ?> 
+var countDownDateP2 = <?php echo $endPlayer2Time ?> 
+var countDownDateP3 = <?php echo $endPlayer3Time ?> 
+var countDownDateP4 = <?php echo $endPlayer4Time ?> 
+</script>
+
 
   <div class="container">
   <div class="row justify-content-md-left">
     <img src=images/AutitoRojo.png class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center"> <?php echo $player1Name;?> </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
-    <script>var countDownDateP1 = <?php echo $endPlayer1Time ?> </script>
+    
     <h1 id="TimerPlayer1" class="col col-lg-3 align-self-center">TimerPlayer1</h1>
   </div>
 
@@ -33,7 +40,6 @@ $endPlayer4Time = $t + 4 * 60 * 1000;
     <img src=images/AutitoVerde.png class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center"> <?php echo $player2Name;?> </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
-    <script>var countDownDate2 = <?php echo $endPlayer2Time ?> </script>
     <h1 id="TimerPlayer2" class="col col-lg-3 align-self-center">TimerPlayer2</h1>
   </div>
 
@@ -41,7 +47,6 @@ $endPlayer4Time = $t + 4 * 60 * 1000;
     <img src=images/AutitoAmarillo.png class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center"> <?php echo $player3Name;?> </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
-    <script>var countDownDate3 = <?php echo $endPlayer2Time ?> </script>
     <h1 id="TimerPlayer3" class="col col-lg-3 align-self-center">TimerPlayer3</h1>
   </div>
 
@@ -49,8 +54,7 @@ $endPlayer4Time = $t + 4 * 60 * 1000;
     <img src=images/AutitoAzul.png class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center"> <?php echo $player4Name;?> </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
-    <script>var countDownDate3 = <?php echo $endPlayer2Time ?> </script>
-    <h1 id="TimerPlayer3" class="col col-lg-3 align-self-center">TimerPlayer3</h1>
+    <h1 id="TimerPlayer4" class="col col-lg-3 align-self-center">TimerPlayer4</h1>
   </div>
 
   </div>
