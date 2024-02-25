@@ -24,10 +24,12 @@ $endPlayer3Time = file_get_contents('./currentPlayers/Player3EndTime.txt', true)
 $endPlayer4Time = file_get_contents('./currentPlayers/Player4EndTime.txt', true);
 ?>
 <script>
-var countDownDateP1 = <?php echo $endPlayer1Time ?> 
-var countDownDateP2 = <?php echo $endPlayer2Time ?> 
-var countDownDateP3 = <?php echo $endPlayer3Time ?> 
-var countDownDateP4 = <?php echo $endPlayer4Time ?> 
+var countdownDateP1 = <?php echo $endPlayer1Time ?> 
+var countdownDateP2 = <?php echo $endPlayer2Time ?> 
+var countdownDateP3 = <?php echo $endPlayer3Time ?> 
+var countdownDateP4 = <?php echo $endPlayer4Time ?> 
+console.log(countdownDateP4);
+console.log(countdownDateP3);
 </script>
 
 

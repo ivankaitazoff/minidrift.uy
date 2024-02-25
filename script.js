@@ -4,7 +4,7 @@ var x = setInterval(function() {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = countDownDateP1 - now;
+  var distance = countdownDateP1 - now;
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
@@ -26,7 +26,7 @@ var x = setInterval(function() {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = countDownDateP2 - now;
+  var distance = countdownDateP2 - now;
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
@@ -47,7 +47,7 @@ var x = setInterval(function() {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = countDownDateP3 - now;
+  var distance = countdownDateP3 - now;
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
@@ -68,20 +68,19 @@ var x = setInterval(function() {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distanceP4 = countDownDateP4 - now;
+  var distance = countdownDateP4 - now;
   // If the count down is finished, write some text
-  if (distanceP4 < 0) {
+  if (distance < 0) {
     clearInterval(x);
     document.getElementById("TimerPlayer4").innerHTML = "Tiempo Terminado";
   }
   else{
     // Time calculations for hours, minutes and seconds
-    var hoursP4 = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutesP$ = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var secondsP4 = Math.floor((distance % (1000 * 60)) / 1000);
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Update Timer
-    document.getElementById("TimerPlayer4").innerHTML =  hoursP4 + ":" + minutesP4 + ":" + secondsP4;
-
+    document.getElementById("TimerPlayer4").innerHTML =  hours + ":" + minutes + ":" + seconds;
   }
 }, 1000); 
