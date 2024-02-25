@@ -14,10 +14,14 @@ $player2Name = file_get_contents('./currentPlayers/Player2Name.txt', true);
 $player3Name = file_get_contents('./currentPlayers/Player3Name.txt', true);
 $player4Name = file_get_contents('./currentPlayers/Player4Name.txt', true);
 $t=(time()*1000);
-$endPlayer1Time = $t + 1 * 60 * 1000;
-$endPlayer2Time = $t + 2 * 60 * 1000;
-$endPlayer3Time = $t + 3 * 60 * 1000;
-$endPlayer4Time = $t + 4 * 60 * 1000;
+//$endPlayer1Time = $t + 4 * 60 * 1000;
+$endPlayer1Time = file_get_contents('./currentPlayers/Player1EndTime.txt', true);
+//$endPlayer2Time = $t + 2 * 60 * 1000;
+$endPlayer2Time = file_get_contents('./currentPlayers/Player2EndTime.txt', true);
+//$endPlayer3Time = $t + 3 * 60 * 1000;
+$endPlayer3Time = file_get_contents('./currentPlayers/Player3EndTime.txt', true);
+//$endPlayer4Time = $t + 4 * 60 * 1000;
+$endPlayer4Time = file_get_contents('./currentPlayers/Player4EndTime.txt', true);
 ?>
 <script>
 var countDownDateP1 = <?php echo $endPlayer1Time ?> 

@@ -9,20 +9,71 @@
     
     <div class="container">
     <div class="row justify-content-md-left">
-    <form action="/action_page.php">
-        <input type="checkbox" id="Jugador1Checkbox" name="Jugador1Checkbox" value="Jugador1Checked">
-        <label for="Jugador1Checkbox"> Actualizar jugador 1 </label><br>
-
-        <label for="nombre">Nombre: </label><br>
-        <input type="text" id="nombre" name="nombre" value=""><br>
-        <label for="tiempo">Elegir tiempo de carrera:</label>
-            <select name="Tiempo" id="tiempo">
+        <form action="/action_page.php" method="post">
+            <!-- Jugador 1 -->
+            <input type="checkbox" id="Jugador1Checkbox" name="Jugador1Checkbox" value="true">
+            <label for="Jugador1Checkbox"> Actualizar jugador 1 </label><br>
+        
+            <label for="nombreP1">Nombre: </label><br>
+            <input type="text" id="nombreP1" name="nombreP1" value=""><br>
+            
+            <label for="tiempoP1">Elegir tiempo de carrera:</label>
+            <select name="tiempoP1" id="tiempoP1">
                 <option value="15">15 Minutos</option>
                 <option value="30">30 Minutos</option>
                 <option value="45">45 Minutos</option>
                 <option value="60">60 Minutos</option>
-            </select>
-        <input type="submit">
+            </select><br>
+            
+            <br>
+            <!-- Jugador 2 -->
+            <input type="checkbox" id="Jugador2Checkbox" name="Jugador2Checkbox" value="true">
+            <label for="Jugador2Checkbox"> Actualizar jugador 2 </label><br>
+        
+            <label for="nombreP2">Nombre: </label><br>
+            <input type="text" id="nombreP2" name="nombreP2" value=""><br>
+            
+            <label for="tiempoP2">Elegir tiempo de carrera:</label>
+            <select name="tiempoP2" id="tiempoP2">
+                <option value="15">15 Minutos</option>
+                <option value="30">30 Minutos</option>
+                <option value="45">45 Minutos</option>
+                <option value="60">60 Minutos</option>
+            </select><br>
+
+            <br>
+            <!-- Jugador 3 -->
+            <input type="checkbox" id="Jugador3Checkbox" name="Jugador3Checkbox" value="true">
+            <label for="Jugador3Checkbox"> Actualizar jugador 3 </label><br>
+        
+            <label for="nombreP3">Nombre: </label><br>
+            <input type="text" id="nombreP3" name="nombreP3" value=""><br>
+            
+            <label for="tiempoP3">Elegir tiempo de carrera:</label>
+            <select name="tiempoP3" id="tiempoP3">
+                <option value="15">15 Minutos</option>
+                <option value="30">30 Minutos</option>
+                <option value="45">45 Minutos</option>
+                <option value="60">60 Minutos</option>
+            </select><br>
+
+            <br>
+            <!-- Jugador 4 -->
+            <input type="checkbox" id="Jugador4Checkbox" name="Jugador4Checkbox" value="true">
+            <label for="Jugador4Checkbox"> Actualizar jugador 4 </label><br>
+        
+            <label for="nombreP4">Nombre: </label><br>
+            <input type="text" id="nombreP4" name="nombreP4" value=""><br>
+            
+            <label for="tiempoP4">Elegir tiempo de carrera:</label>
+            <select name="tiempoP4" id="tiempoP4">
+                <option value="15">15 Minutos</option>
+                <option value="30">30 Minutos</option>
+                <option value="45">45 Minutos</option>
+                <option value="60">60 Minutos</option>
+            </select><br>
+
+            <input type="submit">
         </form>
     </div>
     </div>
