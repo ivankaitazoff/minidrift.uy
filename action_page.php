@@ -18,9 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         file_put_contents($Player1TimeFile, $endPlayer1Time);
 
         // Now you can use these variables as needed
-        echo "Jugador1Checkbox: " . $jugador1Checkbox . "<br>";
-        echo "Nombre: " . $nombre . "<br>";
-        echo "Tiempo: " . $tiempo . "minutos. <br>";
+        echo "Jugador 1 Actualizado<br>";
+        echo "Nombre: " . $nombreP1 . "<br>";
+        echo "Tiempo: " . $tiempoP1 . "minutos. <br>";
     } else {
         // Handle case where parameters are missing
         echo "Jugador 1 no actualizado<br><br>";
@@ -42,12 +42,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         file_put_contents($Player2TimeFile, $endPlayer2Time);
 
         // Now you can use these variables as needed
-        echo "Jugador2Checkbox: " . $jugador2Checkbox . "<br>";
+        echo "Jugador 2 Actualizado<br>";
         echo "Nombre: " . $nombreP2 . "<br>";
         echo "Tiempo: " . $tiempoP2 . "minutos. <br>";
     } else {
         // Handle case where parameters are missing
-        echo "Jugador 2 no actualizado<br><br>";
+        //echo "Jugador 2 no actualizado<br><br>";
     }
 
     // Check if the parameters exist in the request
@@ -66,12 +66,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         file_put_contents($Player3TimeFile, $endPlayer3Time);
 
         // Now you can use these variables as needed
-        echo "Jugador3Checkbox: " . $jugador3Checkbox . "<br>";
+        echo "Jugador 3 Actualizado<br>";
         echo "Nombre: " . $nombreP3 . "<br>";
         echo "Tiempo: " . $tiempoP3 . "minutos. <br>";
     } else {
         // Handle case where parameters are missing
-        echo "Jugador 3 no actualizado<br><br>";
+        //echo "Jugador 3 no actualizado<br><br>";
     }
 
     // Check if the parameters exist in the request
@@ -90,13 +90,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         file_put_contents($Player4TimeFile, $endPlayer4Time);
 
         // Now you can use these variables as needed
-        echo "Jugador4Checkbox: " . $jugador4Checkbox . "<br>";
+        echo "Jugador 4 Actualizado<br>";
         echo "Nombre: " . $nombreP4 . "<br>";
         echo "Tiempo: " . $tiempoP4 . "minutos. <br>";
     } else {
         // Handle case where parameters are missing
-        echo "Jugador 4 no actualizado<br><br>";
+        //echo "Jugador 4 no actualizado<br><br>";
     }
 
+    file_put_contents('./currentPlayers/LastUpdateTime.txt', $t);
 } 
 ?>
