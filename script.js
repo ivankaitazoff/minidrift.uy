@@ -1,5 +1,5 @@
-
-//Line I deleted from PHP $t=(time()*1000);
+let currentTime;
+fetchAndExtractContent();
 // Function to fetch page contents and extract <p> content
 function fetchAndExtractContent() {
   fetch('./getUpdate.php')
@@ -30,27 +30,32 @@ function fetchAndExtractContent() {
       h1NameP3.textContent = player3Name;
       const h1NameP4 = document.getElementById('p4Name');
       h1NameP4.textContent = player4Name;
+
+      currentTime = now;
   })
   .catch(error => {
       console.error('Error fetching page:', error);
   });
 }
-fetchAndExtractContent();
 
 // Call the function every X milliseconds using setInterval
-//setInterval(fetchAndExtractContent, 5000); // Replace 5000 with your desired interval in milliseconds
-setInterval(fetchAndExtractContent, 10000); // Replace 5000 with your desired interval in milliseconds
+setInterval(fetchAndExtractContent, 5000); // Replace 5000 with your desired interval in milliseconds
+
+
+setInterval(() => {
+  currentTime = new Date().getTime();
+  console.log(currentTime);
+}, 1000);
 
 //Timer Player1
 // Update the count down every 1 second
-var x = setInterval(function() {
+const x1 = setInterval(function() {
   // Get today's date and time
-  var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = endPlayer1Time - now;
+  var distance = endPlayer1Time - currentTime;
   // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
+  if (distance <= 0) {
+    clearInterval(x1);
     document.getElementById("TimerPlayer1").innerHTML = "Tiempo Terminado";
   }
   else{
@@ -65,14 +70,13 @@ var x = setInterval(function() {
 }, 1000);
 
 //Timer Player3
-var x = setInterval(function() {
+var x2 = setInterval(function() {
   // Get today's date and time
-  var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = endPlayer2Time - now;
+  var distance = endPlayer2Time - currentTime;
   // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
+  if (distance <= 0) {
+    clearInterval(x2);
     document.getElementById("TimerPlayer2").innerHTML = "Tiempo Terminado";
   }
   else{
@@ -86,14 +90,13 @@ var x = setInterval(function() {
 }, 1000);
 
 //Timer Player3
-var x = setInterval(function() {
+var x3 = setInterval(function() {
   // Get today's date and time
-  var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = endPlayer3Time - now;
+  var distance = endPlayer3Time - currentTime;
   // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
+  if (distance <= 0) {
+    clearInterval(x3);
     document.getElementById("TimerPlayer3").innerHTML = "Tiempo Terminado";
   }
   else{
@@ -107,15 +110,12 @@ var x = setInterval(function() {
 }, 1000);
 
 //Timer Player4
-var x = setInterval(function() {
-  // Get today's date and time
-  var now = new Date().getTime();
+var x4 = setInterval(function() {
   // Find the distance between now and the count down date
-  var distance = endPlayer4Time - now;
-  console.log(distance);
+  var distance = endPlayer4Time - currentTime;
   // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
+  if (distance <= 0) {
+    clearInterval(x4);
     document.getElementById("TimerPlayer4").innerHTML = "Tiempo Terminado";
   }
   else{

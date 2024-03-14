@@ -11,10 +11,10 @@
 <body>
     
 
-  <img src="./images/miniDriftLogoAzulIcon.png" alt="Mini Drift Logo">
+  <!--img src="./images/miniDriftLogoAzulIcon.png" alt="Mini Drift Logo"-->
   <!div class="container">
   <div class="row justify-content-md-left">
-    <img src=images/AutitoRojo.png class="col col-lg-3">
+    <img src=images/GTRChico.jpg class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center" id="p1Name"> P1 Name </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
     
@@ -22,14 +22,14 @@
   </div>
 
   <div class="row justify-content-md-left">
-    <img src=images/AutitoVerde.png class="col col-lg-3">
+    <img src=images/SubaruSTIChico.jpg class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center" id="p2Name" class="text-center"> P2 Name </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
     <h1 id="TimerPlayer2" class="col col-lg-3 align-self-center">TimerPlayer2</h1>
   </div>
 
   <div class="row justify-content-md-left">
-    <img src=images/AutitoAmarillo.png class="col col-lg-3">
+    <img src=images/ToyotaSupraChico.jpg class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center" id="p3Name"> P3 Name </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
     <h1 id="TimerPlayer3" class="col col-lg-3 align-self-center">TimerPlayer3</h1>

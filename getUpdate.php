@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 $player1Name = file_get_contents('./currentPlayers/Player1Name.txt', true);
 $player2Name = file_get_contents('./currentPlayers/Player2Name.txt', true);
@@ -26,3 +34,8 @@ echo "<p id='endPlayer3Time'>$endPlayer3Time</p>";
 echo "<p id='player4Name'>$player4Name</p>";
 echo "<p id='endPlayer4Time'>$endPlayer4Time</p>";
 ?>
+</body>
+</html>
+
+
+

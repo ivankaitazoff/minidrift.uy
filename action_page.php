@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    // Wait for 5 seconds and then redirect
+    setTimeout(function() {
+        window.location.href = 'http://localhost:8000/crearCarrera.html';
+    }, 5000); // 5000 milliseconds = 5 seconds
+</script>
+
+</head>
+<body>
 <?php
 $t=(time()*1000);
 // Check if the POST request contains the parameters
@@ -101,3 +116,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents('./currentPlayers/LastUpdateTime.txt', $t);
 } 
 ?>
+</body>
+</html>
+
