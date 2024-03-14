@@ -1,1 +1,7 @@
-body {background-color: #1e2f63;}
+body {
+    background-image: url('FotosViejas/miniDriftLogoAzul.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    /* Optionally, you can add more styles to the body, such as font-family, color, etc. */
+  }

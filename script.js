@@ -9,7 +9,7 @@ function fetchAndExtractContent() {
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
 
-      // Extract content of each <p> tag and save them in JavaScript variables
+      // Extract content of each <p> tag and save them in JavaScript letiables
       player1Name = tempDiv.querySelector('#player1Name').textContent;
       endPlayer1Time = parseInt(tempDiv.querySelector('#endPlayer1Time').textContent);
       player2Name = tempDiv.querySelector('#player2Name').textContent;
@@ -19,9 +19,9 @@ function fetchAndExtractContent() {
       player4Name = tempDiv.querySelector('#player4Name').textContent;
       endPlayer4Time = parseInt(tempDiv.querySelector('#endPlayer4Time').textContent);
 
-      // Now you have each <p> tag content saved in JavaScript variables
+      // Now you have each <p> tag content saved in JavaScript letiables
 
-      var now = new Date().getTime();
+      let now = new Date().getTime();
       const h1NameP1 = document.getElementById('p1Name');
       h1NameP1.textContent = player1Name;
       const h1NameP2 = document.getElementById('p2Name');
@@ -38,94 +38,114 @@ function fetchAndExtractContent() {
   });
 }
 
-// Call the function every X milliseconds using setInterval
-setInterval(fetchAndExtractContent, 5000); // Replace 5000 with your desired interval in milliseconds
-
-
-setInterval(() => {
-  currentTime = new Date().getTime();
-  console.log(currentTime);
-}, 1000);
-
 //Timer Player1
-// Update the count down every 1 second
-const x1 = setInterval(function() {
-  // Get today's date and time
+function clockPlayer1() {
   // Find the distance between now and the count down date
-  var distance = endPlayer1Time - currentTime;
+  let distance = endPlayer1Time - currentTime;
   // If the count down is finished, write some text
   if (distance <= 0) {
-    clearInterval(x1);
     document.getElementById("TimerPlayer1").innerHTML = "Tiempo Terminado";
   }
   else{
     // Time calculations for hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    if(minutes<10){
+      minutes = "0" + minutes;
+    }
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if(seconds<10){
+      seconds = "0" + seconds;
+    }
     // Update Timer
     document.getElementById("TimerPlayer1").innerHTML =  hours + ":" + minutes + ":" + seconds;
   }
-}, 1000);
+}
 
 //Timer Player3
-var x2 = setInterval(function() {
-  // Get today's date and time
+function clockPlayer2() {
   // Find the distance between now and the count down date
-  var distance = endPlayer2Time - currentTime;
+  let distance = endPlayer2Time - currentTime;
   // If the count down is finished, write some text
   if (distance <= 0) {
-    clearInterval(x2);
     document.getElementById("TimerPlayer2").innerHTML = "Tiempo Terminado";
   }
   else{
     // Time calculations for hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    if(minutes<10){
+      minutes = "0" + minutes;
+    }
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if(seconds<10){
+      seconds = "0" + seconds;
+    }
     // Update Timer
     document.getElementById("TimerPlayer2").innerHTML =  hours + ":" + minutes + ":" + seconds;
   }
-}, 1000);
+}
 
 //Timer Player3
-var x3 = setInterval(function() {
-  // Get today's date and time
-  // Find the distance between now and the count down date
-  var distance = endPlayer3Time - currentTime;
+function clockPlayer3() {
+ // Find the distance between now and the count down date
+  let distance = endPlayer3Time - currentTime;
   // If the count down is finished, write some text
   if (distance <= 0) {
-    clearInterval(x3);
     document.getElementById("TimerPlayer3").innerHTML = "Tiempo Terminado";
   }
   else{
     // Time calculations for hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    if(minutes<10){
+      minutes = "0" + minutes;
+    }
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if(seconds<10){
+      seconds = "0" + seconds;
+    }
     // Update Timer
     document.getElementById("TimerPlayer3").innerHTML =  hours + ":" + minutes + ":" + seconds;
   }
-}, 1000);
+}
 
 //Timer Player4
-var x4 = setInterval(function() {
+function clockPlayer4() {
   // Find the distance between now and the count down date
-  var distance = endPlayer4Time - currentTime;
+  let distance = endPlayer4Time - currentTime;
   // If the count down is finished, write some text
   if (distance <= 0) {
-    clearInterval(x4);
     document.getElementById("TimerPlayer4").innerHTML = "Tiempo Terminado";
   }
   else{
     // Time calculations for hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    if(minutes<10){
+      minutes = "0" + minutes;
+    }
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if(seconds<10){
+      seconds = "0" + seconds;
+    }
     // Update Timer
     document.getElementById("TimerPlayer4").innerHTML =  hours + ":" + minutes + ":" + seconds;
   }
-}, 1000); 
+}
 
+let counter=0;
+setInterval(() => {
+  if(counter==5){
+    counter=0;
+    fetchAndExtractContent();
+  }else{
+    counter++;
+  }
+  currentTime = new Date().getTime();
+  //console.log(currentTime);
+  clockPlayer1();
+  clockPlayer2();
+  clockPlayer3();
+  clockPlayer4();
+}, 1000);

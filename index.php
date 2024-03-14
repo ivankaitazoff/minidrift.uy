@@ -7,7 +7,7 @@
   <title>Document</title>
   <!-- Display the countdown timer in an element -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <style>body {background-color: #1e2f63;}</style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 <body>
     
 
@@ -36,7 +36,7 @@
   </div>
 
   <div class="row justify-content-md-left">
-    <img src=images/AutitoAzul.png class="col col-lg-3">
+    <img src=images/GTRChico.jpg class="col col-lg-3">
     <h1 class="col-lg-3 align-self-center" id="p4Name"> P4 Name </h1>
     <h4 class="col col-lg-3 align-self-center"> Tiempo restante: </h4>
     <h1 id="TimerPlayer4" class="col col-lg-3 align-self-center">TimerPlayer4</h1>
