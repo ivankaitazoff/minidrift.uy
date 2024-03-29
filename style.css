@@ -1,7 +1,11 @@
 body {
-    background-image: url('FotosViejas/miniDriftLogoAzul.jpg'); /* Replace 'background.jpg' with the path to your image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    /* Optionally, you can add more styles to the body, such as font-family, color, etc. */
+  background-image: url('images/RankingCascos2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+  .text_names_time{
+    padding-left: 40%;
+    padding-top: 8.5%;
   }
