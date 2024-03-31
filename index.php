@@ -10,27 +10,25 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 <body>
     
-
-  <!--img src="./images/miniDriftLogoAzulIcon.png" alt="Mini Drift Logo"-->
-  <div class="text_names_time">
-  <div class="row justify-content-md-left">
-    <h1 class="text-white" id="p1Name"> P1 Name </h1>    
-    <h1 id="TimerPlayer1" class="text-white">TimerPlayer1</h1>
+  <div class="container-fluid text-center grid">
+  <div class="row">
+    <h1 class="text-white col-md-4 offset-md-3" id="p1Name"> P1 Name </h1>    
+    <h2 class="text-start col-md-3 offset-md-2" id="TimerPlayer1">TimerPlayer1</h1>
   </div>
 
-  <div class="row justify-content-md-left">
-    <h1 class="text-white" id="p2Name" class="text-center"> P2 Name </h1>
-    <h1 id="TimerPlayer2" class="text-white">TimerPlayer2</h1>
+  <div class="row name-row-2">
+    <h1 class="text-white col-md-4 offset-md-3" id="p2Name"> P2 Name </h1>
+    <h2 class="text-start col-md-3 offset-md-2" id="TimerPlayer2">TimerPlayer2</h1>
   </div>
 
-  <div class="row justify-content-md-left">
-    <h1 class="text-white" id="p3Name"> P3 Name </h1>
-    <h1 id="TimerPlayer3" class="text-white">TimerPlayer3</h1>
+  <div class="row name-row-3">
+    <h1 class="text-white col-md-4 offset-md-3" id="p3Name"> P3 Name </h1>
+    <h2 class="text-start col-md-3 offset-md-2" id="TimerPlayer3">TimerPlayer3</h1>
   </div>
 
-  <div class="row justify-content-md-left">
-    <h1 class="text-white" id="p4Name"> P4 Name </h1>
-    <h1 id="TimerPlayer4" class="text-white">TimerPlayer4</h1>
+  <div class="row name-row-4">
+    <h1 class="text-white col-md-4 offset-md-3" id="p4Name"> P4 Name </h1>
+    <h2 class="text-start col-md-3 offset-md-2" id="TimerPlayer4">TimerPlayer4</h1>
   </div>
 
   </div>

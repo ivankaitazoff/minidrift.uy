@@ -7,7 +7,7 @@
     <script>
     // Wait for 5 seconds and then redirect
     setTimeout(function() {
-        window.location.href = 'http://localhost:8000/crearCarrera.html';
+        window.location.href = '/crearCarrera.html';
     }, 5000); // 5000 milliseconds = 5 seconds
 </script>
 

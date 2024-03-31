@@ -5,7 +5,47 @@ body {
   background-size: cover;
   }
 
-  .text_names_time{
-    padding-left: 40%;
-    padding-top: 8.5%;
-  }
+/* Alineando Grid */
+.grid{
+  padding-top: 8.5%;
+}
+
+.name-row-2{
+  padding-top: 10.5%;
+}
+
+.name-row-3{
+  padding-top: 10.7%;
+}
+
+.name-row-4{
+  padding-top: 11.5%;
+}
+
+/* Alineando texto de nombre */
+#p1Name{
+  padding-left: 100px;
+}
+#p2Name{
+  padding-left: 100px;
+}
+#p3Name{
+  padding-left: 100px;
+}
+#p4Name{
+  padding-left: 100px;
+}
+
+/* Alineando texto de timer */
+#TimerPlayer1{
+  padding-left: 80px;
+}
+#TimerPlayer2{
+  padding-left: 80px;
+}
+#TimerPlayer3{
+  padding-left: 80px;
+}
+#TimerPlayer4{
+  padding-left: 80px;
+}
