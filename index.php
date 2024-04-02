@@ -11,6 +11,7 @@
 <body>
     
   <div class="container-fluid text-center grid">
+    
   <div class="row">
     <h1 class="text-white col-md-4 offset-md-3" id="p1Name"> P1 Name </h1>    
     <h2 class="text-start col-md-3 offset-md-2" id="TimerPlayer1">TimerPlayer1</h1>
